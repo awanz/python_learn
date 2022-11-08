@@ -1,21 +1,10 @@
-x = lambda a : a + 10
-print(x(5))
+number = lambda numb : numb * 5
 
-x = lambda a, b, c : a + b + c
-print(x(5, 6, 2))
+print(number(5))
 
-def myfunc(n):
-  return lambda a : a * n
+name = lambda name : name + "awan"
 
-mydoubler = myfunc(2)
+print(name("herm"))
 
-print(mydoubler(11))
-
-def myfunc(n):
-  return lambda a : a * n
-
-mydoubler = myfunc(2)
-mytripler = myfunc(3)
-
-print(mydoubler(11))
-print(mytripler(11))
+def addCalc(numb1, numb2):
+  return lambda result : result + numb1 + numb2
